@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  width: 100%;
+  max-width: max(7rem, 7vw);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: solid 1px #45B69C;
+  background-color: white;
+  z-index: 2;
+  border-radius: 5px;
+  height: max(2rem, 2vw);
+  width: max(5rem, 5vw);
+}
+
+.btnShadow {
+  border: solid 1px #45B69C;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  border-radius: 5px;
+  height: max(2rem, 2vw);
+  width: max(5rem, 5vw);
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.btn {
+  border: none;
+  background: none;
+  font-size: max(1.2rem, 1.2vw);
+  z-index: 3;
+  padding: 0 0.5rem;
+}/*# sourceMappingURL=DimensionalButton.module.css.map */

@@ -1,0 +1,111 @@
+@import './utility.scss';
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    outline: dotted red 1px;
+    color: $light-black;
+}
+
+.body {
+    display: flex;
+    width: 100%;
+    flex: 0 0 90%;
+    outline: dotted green 1px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 0 0 max(6rem,10%);
+    outline: dotted purple 1px;
+    padding-bottom: max(2rem, 2vw);
+}
+
+.bodyLeft {
+    display: flex;
+    flex-direction: column;
+    outline: dotted magenta 1px;
+}
+
+.bodyRight {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    outline: dotted grey 1px;
+}
+
+.logoContainer {
+    display: flex;
+    position: absolute;
+    height: max(50px,18vw);
+    left: 0;
+    top: 4%;
+}
+
+.animationContainer {
+    display: flex;
+    flex: 1 0 80%;
+    outline: dotted blueviolet 1px;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-direction: column;
+    outline: dotted blue 1px;
+}
+
+.carouselContainer {
+    display: flex;
+    width: 100%;
+    outline: dotted blueviolet 1px;
+}
+
+.socialIcons {
+    display: flex;
+    width: 100%;
+    flex: 0 0 20%;
+    justify-content: flex-end;
+    color: $turqoise;
+    outline: dotted blueviolet 1px;
+}
+
+.brand {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5%;
+    outline: dotted blueviolet 1px;
+}
+
+.name {
+    font-size: max(2.7rem, 6vw);
+    outline: dotted green 1px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.occupation {
+    display: flex;
+    justify-content: flex-end;
+    color: $turqoise;
+    font-size: max(1.2rem, 2vw);
+    outline: dotted green 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.brandText {
+    display: flex;
+    flex-direction: column;
+    max-width: min-content;
+    outline: dotted blueviolet 1px;
+}

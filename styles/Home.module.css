@@ -1,116 +1,113 @@
 .container {
-  padding: 0 2rem;
-}
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  outline: dotted red 1px;
+  color: #181D27;
 }
 
-.footer {
+.body {
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  flex: 0 0 90%;
+  outline: dotted green 1px;
 }
 
-.footer a {
+.menu {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  justify-content: center;
+  width: 100%;
+  flex: 0 0 max(6rem, 10%);
+  outline: dotted purple 1px;
+  padding-bottom: max(2rem, 2vw);
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.bodyLeft {
+  display: flex;
+  flex-direction: column;
+  outline: dotted magenta 1px;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.bodyRight {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  outline: dotted grey 1px;
 }
 
-.title {
+.logoContainer {
+  display: flex;
+  position: absolute;
+  height: max(50px, 18vw);
+  left: 0;
+  top: 4%;
+}
+
+.animationContainer {
+  display: flex;
+  flex: 1 0 80%;
+  outline: dotted blueviolet 1px;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  flex-direction: column;
+  outline: dotted blue 1px;
+}
+
+.carouselContainer {
+  display: flex;
+  width: 100%;
+  outline: dotted blueviolet 1px;
+}
+
+.socialIcons {
+  display: flex;
+  width: 100%;
+  flex: 0 0 20%;
+  justify-content: flex-end;
+  color: #45B69C;
+  outline: dotted blueviolet 1px;
+}
+
+.brand {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 5%;
+  outline: dotted blueviolet 1px;
+}
+
+.name {
+  font-size: max(2.7rem, 6vw);
+  outline: dotted green 1px;
   margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  padding: 0;
+  white-space: nowrap;
 }
 
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.occupation {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
+  justify-content: flex-end;
+  color: #45B69C;
+  font-size: max(1.2rem, 2vw);
+  outline: dotted green 1px;
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  padding: 0;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
+.brandText {
+  display: flex;
+  flex-direction: column;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  outline: dotted blueviolet 1px;
+}/*# sourceMappingURL=Home.module.css.map */
