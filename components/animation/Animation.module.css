@@ -1,0 +1,190 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 5rem;
+  overflow-y: hidden;
+}
+
+.box1 {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: solid #45B69C 1px;
+  background-color: rgba(69, 182, 156, 0.1);
+  -webkit-animation: moveBoxMobile 2s ease-in-out alternate infinite;
+          animation: moveBoxMobile 2s ease-in-out alternate infinite;
+}
+
+.box2 {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: solid #45B69C 1px;
+  background-color: rgba(69, 182, 156, 0.1);
+  -webkit-animation: moveBoxMobile 2s ease-in-out 0.4s alternate infinite;
+          animation: moveBoxMobile 2s ease-in-out 0.4s alternate infinite;
+}
+
+.box3 {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: solid #45B69C 1px;
+  background-color: rgba(69, 182, 156, 0.1);
+  -webkit-animation: moveBoxMobile 2s ease-in-out 0.8s alternate infinite;
+          animation: moveBoxMobile 2s ease-in-out 0.8s alternate infinite;
+}
+
+.box4 {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: solid #45B69C 1px;
+  background-color: rgba(69, 182, 156, 0.1);
+  -webkit-animation: moveBoxMobile 2s ease-in-out 1.2s alternate infinite;
+          animation: moveBoxMobile 2s ease-in-out 1.2s alternate infinite;
+}
+
+.box5 {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: solid #45B69C 1px;
+  background-color: rgba(69, 182, 156, 0.1);
+  -webkit-animation: moveBoxMobile 2s ease-in-out 1.6s alternate infinite;
+          animation: moveBoxMobile 2s ease-in-out 1.6s alternate infinite;
+}
+
+@-webkit-keyframes moveBoxMobile {
+  0% {
+    background-color: rgba(69, 182, 156, 0.1);
+    transform: translate3d(0vw, 0vw, 20vw) rotate(90deg);
+  }
+  25% {
+    background-color: rgba(69, 182, 156, 0.3);
+  }
+  50% {
+    background-color: rgba(69, 182, 156, 0.5);
+  }
+  75% {
+    background-color: rgba(69, 182, 156, 0.7);
+  }
+  100% {
+    background-color: rgba(69, 182, 156, 0.9);
+    transform: translate3d(95vw, 0vw, 0vw);
+  }
+}
+
+@keyframes moveBoxMobile {
+  0% {
+    background-color: rgba(69, 182, 156, 0.1);
+    transform: translate3d(0vw, 0vw, 20vw) rotate(90deg);
+  }
+  25% {
+    background-color: rgba(69, 182, 156, 0.3);
+  }
+  50% {
+    background-color: rgba(69, 182, 156, 0.5);
+  }
+  75% {
+    background-color: rgba(69, 182, 156, 0.7);
+  }
+  100% {
+    background-color: rgba(69, 182, 156, 0.9);
+    transform: translate3d(95vw, 0vw, 0vw);
+  }
+}
+@-webkit-keyframes moveBoxDesktop {
+  0% {
+    background-color: rgba(69, 182, 156, 0.1);
+    transform: translate3d(2vh, -20vh, 20vw) rotate(90deg);
+  }
+  25% {
+    background-color: rgba(69, 182, 156, 0.3);
+  }
+  50% {
+    background-color: rgba(69, 182, 156, 0.5);
+  }
+  75% {
+    background-color: rgba(69, 182, 156, 0.7);
+  }
+  100% {
+    background-color: rgba(69, 182, 156, 0.9);
+    transform: translate3d(10vh, 40vh, 0vw);
+  }
+}
+@keyframes moveBoxDesktop {
+  0% {
+    background-color: rgba(69, 182, 156, 0.1);
+    transform: translate3d(2vh, -20vh, 20vw) rotate(90deg);
+  }
+  25% {
+    background-color: rgba(69, 182, 156, 0.3);
+  }
+  50% {
+    background-color: rgba(69, 182, 156, 0.5);
+  }
+  75% {
+    background-color: rgba(69, 182, 156, 0.7);
+  }
+  100% {
+    background-color: rgba(69, 182, 156, 0.9);
+    transform: translate3d(10vh, 40vh, 0vw);
+  }
+}
+@media (min-width: 767px) {
+  .box1 {
+    -webkit-animation: moveBoxDesktop 2s ease-in-out alternate infinite;
+            animation: moveBoxDesktop 2s ease-in-out alternate infinite;
+    top: calc(15vh + 15vw);
+    left: max(3rem, 4vw);
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .box2 {
+    -webkit-animation: moveBoxDesktop 2s ease-in-out 0.4s alternate infinite;
+            animation: moveBoxDesktop 2s ease-in-out 0.4s alternate infinite;
+    top: calc(15vh + 15vw);
+    left: max(3rem, 4vw);
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .box3 {
+    -webkit-animation: moveBoxDesktop 2s ease-in-out 0.8s alternate infinite;
+            animation: moveBoxDesktop 2s ease-in-out 0.8s alternate infinite;
+    top: calc(15vh + 15vw);
+    left: max(3rem, 4vw);
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .box4 {
+    -webkit-animation: moveBoxDesktop 2s ease-in-out 1.2s alternate infinite;
+            animation: moveBoxDesktop 2s ease-in-out 1.2s alternate infinite;
+    top: calc(15vh + 15vw);
+    left: max(3rem, 4vw);
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .box5 {
+    -webkit-animation: moveBoxDesktop 2s ease-in-out 1.6s alternate infinite;
+            animation: moveBoxDesktop 2s ease-in-out 1.6s alternate infinite;
+    top: calc(15vh + 15vw);
+    left: max(3rem, 4vw);
+    height: 3rem;
+    width: 3rem;
+  }
+}/*# sourceMappingURL=Animation.module.css.map */

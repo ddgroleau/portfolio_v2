@@ -1,10 +1,13 @@
 .container {
   display: flex;
   width: 100%;
-  max-width: max(7rem, 7vw);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  cursor: pointer;
 }
 
 .btnContainer {
@@ -12,24 +15,26 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  z-index: 2;
   border: solid 1px #45B69C;
   background-color: white;
-  z-index: 2;
-  border-radius: 5px;
-  height: max(2rem, 2vw);
-  width: max(5rem, 5vw);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  width: 7rem;
+  height: 2.5rem;
 }
 
 .btnShadow {
   border: solid 1px #45B69C;
   background-color: white;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  width: 7rem;
+  height: 2.5rem;
   position: absolute;
   z-index: 1;
-  border-radius: 5px;
-  height: max(2rem, 2vw);
-  width: max(5rem, 5vw);
-  margin-top: 0.5rem;
-  margin-left: 0.5rem;
+  margin-top: 0.25rem;
+  margin-left: 0.25rem;
 }
 
 .btn {
@@ -38,4 +43,8 @@
   font-size: max(1.2rem, 1.2vw);
   z-index: 3;
   padding: 0 0.5rem;
+}
+
+.activeBtn {
+  background-color: rgba(69, 182, 156, 0.25) !important;
 }/*# sourceMappingURL=DimensionalButton.module.css.map */

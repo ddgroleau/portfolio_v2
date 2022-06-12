@@ -21,3 +21,8 @@ a {
 button, a, input, select, textarea {
   cursor: pointer;
 }
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

@@ -3,8 +3,18 @@
 .container {
     display: flex;
     width: 100%;
-    max-width: max(7rem, 7vw);
+    width: fit-content;
     height: fit-content;
+    cursor: pointer;
+}
+
+@mixin btn() {
+    border: solid 1px $turqoise;
+    background-color: $white;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    width: 7rem;
+    height: 2.5rem;
 }
 
 .btnContainer {
@@ -12,24 +22,16 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    border: solid 1px $turqoise;
-    background-color: $white;
     z-index: 2;
-    border-radius: 5px;
-    height: max(2rem, 2vw);
-    width: max(5rem, 5vw);
+    @include btn();
 }
 
 .btnShadow {
-    border: solid 1px $turqoise;
-    background-color: $white;
+    @include btn();
     position: absolute;
     z-index: 1;
-    border-radius: 5px;
-    height: max(2rem, 2vw);
-    width: max(5rem, 5vw);
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
+    margin-top: 0.25rem;
+    margin-left: 0.25rem;
 }
 
 .btn {
@@ -38,4 +40,8 @@
     font-size: max(1.2rem, 1.2vw);
     z-index: 3;
     padding: 0 0.5rem;
+}
+
+.activeBtn {
+    background-color: $turqoise-25p !important;
 }

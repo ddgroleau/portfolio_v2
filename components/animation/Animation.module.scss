@@ -1,0 +1,119 @@
+@import '../../styles/utility.scss';
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+    overflow-y: hidden;
+}
+
+@mixin box() {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: solid $turqoise 1px;
+    background-color: $turqoise-10p;
+}
+
+.box1 {
+    @include box();
+    animation: moveBoxMobile 2s ease-in-out alternate infinite;
+}
+
+.box2 {
+    @include box();
+    animation: moveBoxMobile 2s ease-in-out 0.4s alternate infinite;
+}
+
+.box3 {
+    @include box();
+    animation: moveBoxMobile 2s ease-in-out 0.8s alternate infinite;
+}
+
+.box4 {
+    @include box();
+    animation: moveBoxMobile 2s ease-in-out 1.2s alternate infinite;
+}
+
+.box5 {
+    @include box();
+    animation: moveBoxMobile 2s ease-in-out 1.6s alternate infinite;
+}
+
+
+@keyframes moveBoxMobile {
+    0% {
+        background-color: $turqoise-10p;
+        transform: translate3d(0vw, 0vw, 20vw) rotate(90deg);
+    }
+    25% {
+        background-color: $turqoise-20p;
+    }
+    50% {
+        background-color: $turqoise-30p;
+    }
+    75% {
+        background-color: $turqoise-40p;
+    }
+    100% {
+        background-color: $turqoise-50p;
+        transform: translate3d(95vw,0vw, 0vw);
+    }
+}
+
+@keyframes moveBoxDesktop {
+    0% {
+        background-color: $turqoise-10p;
+        transform: translate3d(2vh, -20vh, 20vw) rotate(90deg);
+    }
+    25% {
+        background-color: $turqoise-20p;
+    }
+    50% {
+        background-color: $turqoise-30p;
+    }
+    75% {
+        background-color: $turqoise-40p;
+    }
+    100% {
+        background-color: $turqoise-50p;
+        transform: translate3d(10vh,40vh, 0vw);
+    }
+}
+
+@mixin DesktopBox() {
+    top: calc(15vh + 15vw);
+    left: max(3rem,4vw);
+    height: 3rem;
+    width: 3rem;
+}
+
+@media (min-width: 767px) {
+    .box1 {
+        animation: moveBoxDesktop 2s ease-in-out alternate infinite;
+        @include DesktopBox();
+    }
+    
+    .box2 {
+        animation: moveBoxDesktop 2s ease-in-out 0.4s alternate infinite;
+        @include DesktopBox();
+    }
+    
+    .box3 {
+        animation: moveBoxDesktop 2s ease-in-out 0.8s alternate infinite;
+        @include DesktopBox();
+    }
+    
+    .box4 {
+        animation: moveBoxDesktop 2s ease-in-out 1.2s alternate infinite;
+        @include DesktopBox();
+    }
+    
+    .box5 {
+        animation: moveBoxDesktop 2s ease-in-out 1.6s alternate infinite;
+        @include DesktopBox();
+    }
+}
+

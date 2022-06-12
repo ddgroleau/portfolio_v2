@@ -1,113 +1,172 @@
 .container {
   height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  outline: dotted red 1px;
   color: #181D27;
-}
-
-.body {
-  display: flex;
-  width: 100%;
-  flex: 0 0 90%;
-  outline: dotted green 1px;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  flex: 0 0 max(6rem, 10%);
-  outline: dotted purple 1px;
-  padding-bottom: max(2rem, 2vw);
-}
-
-.bodyLeft {
-  display: flex;
-  flex-direction: column;
-  outline: dotted magenta 1px;
-}
-
-.bodyRight {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  outline: dotted grey 1px;
-}
-
-.logoContainer {
-  display: flex;
-  position: absolute;
-  height: max(50px, 18vw);
-  left: 0;
-  top: 4%;
-}
-
-.animationContainer {
-  display: flex;
-  flex: 1 0 80%;
-  outline: dotted blueviolet 1px;
+  padding: max(0.5rem, 2.5%);
+  max-width: 1200px;
+  gap: max(1.5rem, 1.5vw);
+  background-color: #fff;
 }
 
 .header {
   display: flex;
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  flex-direction: column;
-  outline: dotted blue 1px;
+  gap: max(1rem, 2.5vw);
+  justify-content: space-around;
 }
 
-.carouselContainer {
+.logo {
   display: flex;
   width: 100%;
-  outline: dotted blueviolet 1px;
+  align-items: flex-end;
+  width: max(33%, 33vw);
+}
+
+.headerContent {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.headerContent p {
+  color: #45B69C;
+  margin: 0;
+  text-align: right;
+  font-size: min(1.5rem, 2vw);
+}
+.headerContent h1 {
+  margin: 0;
+  font-size: min(5rem, 6vw);
+  text-align: right;
+  padding-top: 0.5rem;
+  white-space: nowrap;
 }
 
 .socialIcons {
   display: flex;
   width: 100%;
-  flex: 0 0 20%;
+  gap: 1rem;
   justify-content: flex-end;
-  color: #45B69C;
-  outline: dotted blueviolet 1px;
+  align-items: center;
+  cursor: pointer;
+}
+.socialIcons svg {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
-.brand {
+.body {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 766px) {
+  .body {
+    height: 70%;
+  }
+}
+.carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  z-index: 2;
+  flex-direction: column;
+  max-width: 50rem;
+}
+
+.carouselTitle {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.menu {
   display: flex;
   width: 100%;
   flex-direction: column;
-  align-items: flex-end;
-  padding-right: 5%;
-  outline: dotted blueviolet 1px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  background-color: white;
 }
 
-.name {
-  font-size: max(2.7rem, 6vw);
-  outline: dotted green 1px;
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
+.menuButtonsClosed {
+  display: none;
 }
 
-.occupation {
+.menuButtonsOpen {
   display: flex;
-  justify-content: flex-end;
-  color: #45B69C;
-  font-size: max(1.2rem, 2vw);
-  outline: dotted green 1px;
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  flex-flow: row wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
 }
 
-.brandText {
+.mobileMenuToggle {
   display: flex;
-  flex-direction: column;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  outline: dotted blueviolet 1px;
+  width: 100%;
+  justify-content: center;
+  border-top: solid 1px #45B69C;
+  padding: 0.5rem 0;
+}
+
+@media (min-width: 767px) {
+  .menuButtonsClosed {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .mobileMenuToggle {
+    display: none;
+  }
+
+  .menu {
+    background-color: transparent;
+  }
+
+  .headerContent h1 {
+    width: 75%;
+  }
+  .headerContent p {
+    width: 75%;
+  }
+
+  .body {
+    flex-direction: row;
+  }
+}
+.slideUp {
+  -webkit-animation: slideUp 0.4s ease-in-out;
+          animation: slideUp 0.4s ease-in-out;
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10vh);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10vh);
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=Home.module.css.map */
