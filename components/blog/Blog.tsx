@@ -12,7 +12,7 @@ const Blog = () => {
                 </h2>
                 <p>
                     <strong>
-                        You can find my blog <Link href="/">
+                        You can find my blog <Link href="http://fullstackdan.com">
                             <a target="_blank" style={{textDecoration: "underline"}}>here</a>
                         </Link>. 
                     </strong> I write articles on academic computer science concepts, 
