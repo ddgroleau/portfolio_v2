@@ -5,11 +5,11 @@
     justify-content: center;
     width: 5rem;
     overflow-y: hidden;
-    display: none;
 }
 
 @mixin box() {
     position: absolute;
+    display: none;
     top: 8rem;
     left: 0;
     height: 1.5rem;
@@ -89,12 +89,10 @@
     left: max(3rem,4vw);
     height: 3rem;
     width: 3rem;
+    display: flex;
 }
 
 @media (min-width: 767px) {
-    .container {
-        display: flex;
-    }
     .box1 {
         animation: moveBoxDesktop 2s ease-in-out alternate infinite;
         @include DesktopBox();
