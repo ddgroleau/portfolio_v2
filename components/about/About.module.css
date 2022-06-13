@@ -21,4 +21,10 @@
 }
 .content p {
   margin-block: 1.2vw;
+}
+
+@media (min-width: 767px) {
+  .container {
+    font-size: 140%;
+  }
 }/*# sourceMappingURL=About.module.css.map */

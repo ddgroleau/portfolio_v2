@@ -24,3 +24,9 @@
         margin-block: 1.2vw;
     }
 }
+
+@media (min-width: 767px) {
+    .container {
+        font-size: 140%;
+    }
+}

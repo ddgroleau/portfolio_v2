@@ -45,3 +45,13 @@
 .activeBtn {
     background-color: $turqoise-25p !important;
 }
+
+@media (min-width: 767px) {
+    .btnContainer, .btnShadow {
+        width: 9rem;
+        height: 3rem;
+    }
+    .btn {
+        font-size: max(1.5rem, 1.5vw);
+    }
+}

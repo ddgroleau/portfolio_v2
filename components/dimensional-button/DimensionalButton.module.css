@@ -47,4 +47,15 @@
 
 .activeBtn {
   background-color: rgba(69, 182, 156, 0.25) !important;
+}
+
+@media (min-width: 767px) {
+  .btnContainer, .btnShadow {
+    width: 9rem;
+    height: 3rem;
+  }
+
+  .btn {
+    font-size: max(1.5rem, 1.5vw);
+  }
 }/*# sourceMappingURL=DimensionalButton.module.css.map */
