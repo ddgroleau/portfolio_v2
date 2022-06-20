@@ -15,7 +15,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 80%;
   min-width: 20rem;
 }
 .content h2 {
