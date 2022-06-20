@@ -7,6 +7,8 @@
   min-width: 20rem;
   padding: 1rem;
   padding-top: 0;
+  margin-bottom: 5rem;
+  line-height: 2.5rem;
 }
 
 .content {
@@ -17,6 +19,7 @@
   min-width: 20rem;
 }
 .content h2 {
+  line-height: 3rem;
   font-weight: 300;
 }
 .content p {

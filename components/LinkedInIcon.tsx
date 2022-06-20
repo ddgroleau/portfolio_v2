@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-const LinkedInIIcon = () => {
+const LinkedInIcon = () => {
     return (
         <Link href="https://www.linkedin.com/in/dangroleau/" passHref>
             <a target="_blank">
@@ -14,4 +14,4 @@ const LinkedInIIcon = () => {
     );
 };
 
-export default LinkedInIIcon;
+export default LinkedInIcon;

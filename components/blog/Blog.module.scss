@@ -8,7 +8,9 @@
     border-radius: 4px;
     min-width: 20rem;
     padding: 1rem;
+    margin-bottom: 5rem;
     padding-top: 0;
+    line-height: 2.5rem;
 }
 
 .content {
@@ -19,6 +21,7 @@
     min-width: 20rem;
     h2 {
         font-weight: 300;
+        line-height: 3rem;
     }
     p {
         margin-block: 1.2vw;

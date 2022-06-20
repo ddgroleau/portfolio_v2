@@ -7,7 +7,7 @@ import DimensionalButton from '../components/dimensional-button/DimensionalButto
 import DoubleArrowButton from '../components/DoubleArrowButton';
 import EmailIcon from '../components/EmailIcon';
 import GitHubIcon from '../components/GitHubIcon';
-import LinkedInIIcon from '../components/LinkedInIIcon';
+import LinkedInIcon from '../components/LinkedInIcon';
 import Logo from '../components/Logo';
 import styles from '../styles/Home.module.css';
 import projects from '../projects';
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
                                 </strong>
                                 <GitHubIcon/>
                                 <EmailIcon/>
-                                <LinkedInIIcon/>
+                                <LinkedInIcon/>
                             </div>
                             <div>
                                 <h1>Dan Groleau</h1>
