@@ -36,11 +36,11 @@
         color: $turqoise;
         margin: 0;
         text-align: right;
-        font-size: min(1.5rem, 2vw);
+        font-size: max(1.2rem, 1.2vw);
     }
     h1 {
         margin: 0;
-        font-size: min(5rem, 6vw);
+        font-size: max(2rem, 3vw);
         text-align: right;
         padding-top: 0.5rem;
         white-space: nowrap;
@@ -49,13 +49,14 @@
 
 .socialIcons {
     @include flex();
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: flex-end;
     align-items: center;
+    font-size: max(1.2rem, 1.2vw);
     cursor: pointer;
     svg {
-        height: 1.5rem;
-        width: 1.5rem;
+        height: max(1.5rem,1.5vw);
+        width:  max(1.5rem,1.5vw);
     }
 }
 
@@ -77,13 +78,13 @@
     align-items: center;
     z-index: 2;
     flex-direction: column;
-    max-width: 50rem;
+    max-width: 60rem;
 }
 
 .carouselTitle {
-    margin: 0;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
+    font-size: max(1.2rem, 1.2vw)
 }
 
 .menu {
@@ -94,6 +95,7 @@
     left: 0;
     z-index: 3;
     background-color: $white;
+    min-height: 4rem;
 }
 
 .menuButtonsClosed {
@@ -129,21 +131,33 @@
     .menu {
         background-color: transparent;
     }
-    .headerContent {
-        h1 {
-            width: 75%;
-        }
-        p {
-            width: 75%;
-        }
-    }
     .body {
         flex-direction: row;
+    }
+    .header {
+        max-width: 55vw;
+    }
+    .logo {
+        max-width: 15rem;
     }
 }
 
 .slideUp {
     animation: slideUp 0.4s ease-in-out;
+}
+
+.fadeIn {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
 }
 
 @keyframes slideUp {

@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
 import { useState } from 'react';
-import Animation from '../components/animation/Animation';
 import Carousel from '../components/carousel/Carousel';
 import DimensionalButton from '../components/dimensional-button/DimensionalButton';
 import DoubleArrowButton from '../components/DoubleArrowButton';
@@ -20,6 +19,7 @@ const Home: NextPage = () => {
     const [isMobileToggled, setIsMobileToggled] = useState<boolean>(false);
     const [activeIndex, setActiveIndex] = useState<number>(0);
     const [isAnimated, setIsAnimated] = useState<boolean>(false);
+    const [isNewItem, setIsNewItem] = useState<boolean>(false);
 
     const projectCards = projects.map(project => {
         return <ProjectCard key={projects.indexOf(project)} project={project}/>;
@@ -32,8 +32,8 @@ const Home: NextPage = () => {
     ];
     
     const handleClick = (item:any) => {
+        setIsNewItem(true);
         setActiveIndex(menuItems.indexOf(item));
-        setIsMobileToggled(false);
     };
 
     const handleOpenMobileFilters = () => {
@@ -71,8 +71,10 @@ const Home: NextPage = () => {
                             </div>
                         </div>
                     </header>
-                    <section className={styles.body}>
-                        <Animation/>
+                    <section 
+                        className={`${isNewItem ? styles.fadeIn : ''} ${styles.body}`}
+                        onAnimationEnd={()=>setIsNewItem(false)}
+                    >
                         <div className={styles.carousel}>
                             <p className={styles.carouselTitle}><strong>{menuItems[activeIndex].text}</strong></p>
                             {menuItems[activeIndex].component}

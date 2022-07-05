@@ -43,6 +43,7 @@
   font-size: max(1.2rem, 1.2vw);
   z-index: 3;
   padding: 0 0.5rem;
+  font-size: max(1.5rem, 1.5vw);
 }
 
 .activeBtn {
@@ -53,9 +54,5 @@
   .btnContainer, .btnShadow {
     width: 9rem;
     height: 3rem;
-  }
-
-  .btn {
-    font-size: max(1.5rem, 1.5vw);
   }
 }/*# sourceMappingURL=DimensionalButton.module.css.map */
