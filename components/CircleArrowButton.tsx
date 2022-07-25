@@ -13,8 +13,8 @@ const CircleArrowButton = ({onClick,rotateDegrees}:CircleArrowButtonProps) => {
                 transform: `rotate(${rotateDegrees}deg)`,
                 border: "none",
                 background: "none",
-                height: "3rem",
-                width:"3rem",
+                height: "4rem",
+                width:"4rem",
             }}
             type="button" 
             onClick={onClick}>

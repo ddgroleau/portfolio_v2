@@ -127,23 +127,18 @@
     padding: 1rem;
     justify-content: center;
   }
-
   .mobileMenuToggle {
     display: none;
   }
-
   .menu {
     background-color: transparent;
   }
-
   .body {
     flex-direction: row;
   }
-
   .header {
     max-width: 55vw;
   }
-
   .logo {
     max-width: 15rem;
   }

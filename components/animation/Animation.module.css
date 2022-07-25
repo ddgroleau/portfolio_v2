@@ -157,7 +157,6 @@
     width: 3rem;
     display: flex;
   }
-
   .box2 {
     -webkit-animation: moveBoxDesktop 2s ease-in-out 0.4s alternate infinite;
             animation: moveBoxDesktop 2s ease-in-out 0.4s alternate infinite;
@@ -167,7 +166,6 @@
     width: 3rem;
     display: flex;
   }
-
   .box3 {
     -webkit-animation: moveBoxDesktop 2s ease-in-out 0.8s alternate infinite;
             animation: moveBoxDesktop 2s ease-in-out 0.8s alternate infinite;
@@ -177,7 +175,6 @@
     width: 3rem;
     display: flex;
   }
-
   .box4 {
     -webkit-animation: moveBoxDesktop 2s ease-in-out 1.2s alternate infinite;
             animation: moveBoxDesktop 2s ease-in-out 1.2s alternate infinite;
@@ -187,7 +184,6 @@
     width: 3rem;
     display: flex;
   }
-
   .box5 {
     -webkit-animation: moveBoxDesktop 2s ease-in-out 1.6s alternate infinite;
             animation: moveBoxDesktop 2s ease-in-out 1.6s alternate infinite;

@@ -8,6 +8,14 @@ const projects = [
         githubUri:"https://github.com/ddgroleau/root-to-rise"
     },
     {
+        imagePath:"/auth-project.svg",
+        title:"OAuth2 Identity Provider",
+        description:"Authentication/authorization provider for e-commerce platform.",
+        technologies:["Java / Spring Security","Spring MVC / Thymeleaf"],
+        websiteUri:"http://identity.roottorisebotanicals.com",
+        githubUri:"https://github.com/ddgroleau/id-assert"
+    },
+    {
         imagePath:"/choices-project.svg",
         title:"Health & Wellness Shopping Platform",
         description:"A health and wellness discount provider for an enterprise organization.",
@@ -21,6 +29,14 @@ const projects = [
         description:"Premiere digital presence for an integrative health solutions business.",
         technologies:["JavaScript / PHP (WordPress)","C# / ASP.NET / PHP"],
         websiteUri:"https://www.wholehealthliving.com",
+        githubUri:""
+    },
+    {
+        imagePath:"/blog-project.svg",
+        title:"Programming Blog and Tutorials Site",
+        description:"Personal blog providing tutorials, guides and informational articles to a global audience.",
+        technologies:["JavaScript / PHP (WordPress)"],
+        websiteUri:"https://fullstackdan.com",
         githubUri:""
     },
 ];
