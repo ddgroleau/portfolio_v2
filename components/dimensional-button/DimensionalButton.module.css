@@ -40,6 +40,7 @@
 .btn {
   border: none;
   background: none;
+  color: #181D27;
   font-size: max(1.2rem, 1.2vw);
   z-index: 3;
   padding: 0 0.5rem;
