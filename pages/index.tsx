@@ -34,6 +34,12 @@ const Home: NextPage = () => {
     const handleClick = (item:any) => {
         setIsNewItem(true);
         setActiveIndex(menuItems.indexOf(item));
+        if(item === menuItems[1] && typeof window !== 'undefined') {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth',
+            });
+        }
     };
 
     const handleOpenMobileFilters = () => {
