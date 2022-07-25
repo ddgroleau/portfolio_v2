@@ -10,7 +10,7 @@ const projects = [
     {
         imagePath:"/auth-project.svg",
         title:"OAuth2 Identity Provider",
-        description:"Authentication/authorization provider for e-commerce platform.",
+        description:"Authentication / authorization provider for e-commerce platform.",
         technologies:["Java / Spring Security","Spring MVC / Thymeleaf"],
         websiteUri:"http://identity.roottorisebotanicals.com",
         githubUri:"https://github.com/ddgroleau/id-assert"

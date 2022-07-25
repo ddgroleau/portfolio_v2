@@ -46,7 +46,11 @@ const Home: NextPage = () => {
             <Head>
                 <title>Dan Groleau | Portfolio</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <meta name="description" content="The professional software engineering portfolio of Dan Groleau." />
+                <meta name="description" 
+                    content={"Dan Groleau is a professional "+ 
+                    "full-stack software engineer specializing in wev development. " + 
+                    "He's worked in a variety of industries to include defense, supply chain and logistics, "+
+                    "and healthcare."} />
             </Head>
             <main>
                 <section className={styles.container}>
